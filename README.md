@@ -1,9 +1,9 @@
-# Blue Archive Pixel Duneon
-Blue Archive Pixel Dungeon is a fan-game of blue archive made with shattered pixel dungeon's open source.
+# Blue Archive Pixel Duneon CN
+CN translation project of BlueArch Pixel Dungeon(Blue Archive PD).
 
-It is not completed yet, I'm developing it gradually.
+Blue Archive Pixel Dungeon is a fan-game of blue archive made with shattered pixel dungeon's open source, it's still work in progress.
 
-All dot assets that are new in this project is made by [myself](https://github.com/Hoto-Mocha).
+All new assets in this project, except CN translation files are created by [Cocoa(HottoMocha)](https://github.com/Hoto-Mocha).
 
 ---
 # Shattered Pixel Dungeon
