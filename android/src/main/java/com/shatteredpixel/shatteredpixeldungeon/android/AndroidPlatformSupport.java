@@ -221,7 +221,8 @@ public class AndroidPlatformSupport extends PlatformSupport {
 				default:
 					typeFace = 2;
 			}
-			KRFontGenerator = SCFontGenerator = JPFontGenerator = new FreeTypeFontGenerator(Gdx.files.absolute("/system/fonts/NotoSansCJK-Regular.ttc"), typeFace);
+			SCFontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("fonts/pixel_font.ttf"));
+			KRFontGenerator = JPFontGenerator = new FreeTypeFontGenerator(Gdx.files.absolute("/system/fonts/NotoSansCJK-Regular.ttc"), typeFace);
 			
 		//otherwise we have to go over a few possibilities.
 		} else {
@@ -235,11 +236,7 @@ public class AndroidPlatformSupport extends PlatformSupport {
 			}
 			
 			//Chinese font generators
-			if (Gdx.files.absolute("/system/fonts/NotoSansSC-Regular.otf").exists()){
-				SCFontGenerator = new FreeTypeFontGenerator(Gdx.files.absolute("/system/fonts/NotoSansSC-Regular.otf"));
-			} else if (Gdx.files.absolute("/system/fonts/NotoSansHans-Regular.otf").exists()){
-				SCFontGenerator = new FreeTypeFontGenerator(Gdx.files.absolute("/system/fonts/NotoSansHans-Regular.otf"));
-			}
+			SCFontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("fonts/pixel_font.ttf"));
 			
 			//Japaneses font generators
 			if (Gdx.files.absolute("/system/fonts/NotoSansJP-Regular.otf").exists()){
